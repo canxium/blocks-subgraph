@@ -1,16 +1,16 @@
 specVersion: 0.0.4
-description: Indexing all Arbitrum One Block data
-repository: https://github.com/blocklytics/ethereum-blocks
+description: Indexing all Canxium Block data
+repository: https://github.com/canxium/blocks-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: ConverterRegistryContract
-    network: cerium
+    network: canxium
     source:
-      address: '0x797CA8CAa4963B28b1BaBCDB048e8294B2389eda'
+      address: '0xA3A18968b3a5f5bd0872C58B1bC59481E4496d67'
       abi: ConverterRegistryContract
-      startBlock: 327148
+      startBlock: 1891503
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
